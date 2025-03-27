@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--title in url-->
-        <title>disPLAY homepage</title>
+        <title>display_home</title>
     <!--link to style sheet-->
         <link rel="stylesheet" href="css/style.css">
         
@@ -35,28 +35,6 @@
     }
 /*defines absolute position class (to be used within relative position)*/
 
-    button {
-        font-family: "Silkscreen", sans-serif;
-        font-size: 100%;
-        color: #658196;
-        border-radius: 1rem;
-        /*width:600px;*/
-        /*width controlled by button now that it is deleted from .absolute*/
-        padding: 5px;
-        background-color: #BCD6EB;
-        border: 4px solid #658196;
-    }
-
-    button:hover {
-        transition: 0.5s;
-        background-color: #658196;
-        border: 4px solid #BCD6EB;
-        color: #BCD6EB;
-        border-radius: 1rem;
-        /*careful using pixels in absolute positioning. if a screen is smaller than the pixel count it will go off the screen.*/
-        font-weight: 800;
-    }
-
     a:link {
         text-decoration: none;
     }
@@ -67,19 +45,19 @@
         grid-template-columns: auto auto auto;
     /* auto auto auto - three columns*/
         padding: 10px;
-}
+    }
     .container > div {
         padding: 10px;
         text-align: center;
-}
-    </style>
-    
-    </head>
+    }
+
+</style>
+</head>
 
     <body>
         <p id="top">
         <h1>
-            <div><a href="index.html" style="color:rgb(250, 225, 250)" class="responsive">disPLAY
+            <div><a href="index.html" class="responsive">disPLAY
             </a></div>
         </h1>
             <h2>
@@ -117,7 +95,12 @@
 
     <div class="container">
         <div><footer>logo</footer></div>
-        <div><footer>pages<br><br>home<br>create<br>share<br>explore<br></footer></div>
+        <div><footer>pages<br>
+            <br><a href="index.html" style="color:rgb(188, 214, 235);">home</a>
+            <br><a href="create.html" style="color:rgb(188, 214, 235);">create</a>
+            <br><a href="share.html" style="color:rgb(188, 214, 235);">share</a>
+            <br><a href="explore.html"style="color:rgb(188, 214, 235);">explore</a> 
+        </footer></div>
         <div><footer>designed & developed by:<br><br>
                 madison brook schneider<br>
                 © madison brook schneider 2025<br><br>

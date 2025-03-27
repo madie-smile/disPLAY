@@ -3,37 +3,66 @@
     margin: auto;
     text-align: center;
 }*/
+a:link {
+    text-decoration: none;
+    color: #EBBCE7;
+}
 
-/* MADIE: check container multiple places*/
+a:hover{
+    color: #B079AF;
+    transition: 2s;
+}
 
 @font-face{
-    font-family: "Jacquard 24";
+    font-family: 'Jacquard24';
     src:    url('/fonts/Jacquard24-Regular.woff') format('woff'),
             url('/fonts/Jacquard24-Regular.woff2') format('woff2');
-            font-style: normal;
             
 }
 
+@media (max-width:600px){
 h1{
-    font-family: "Jacquard 24";
-    color:rgb(250, 225, 250); 
+    font-family: "Jacquard24";
+    color:#EBBCE7; 
     text-align:center; 
     font-size: 400%;
     font-weight: 400;
 }
+}
+
+@media (min-width:601px){
+    h1{
+        font-family: "Jacquard24";
+        color:#EBBCE7;
+        text-align:center; 
+        font-size: 1000%;
+        font-weight: 400;
+    }
+    }
 
 @font-face{
-    font-family: "Silkscreen";
+    font-family: 'Silkscreen';
     src:    url('/fonts/Silkscreen-Regular.woff') format('woff'),
             url('/fonts/Silkscreen-Regular.woff2') format('woff2');
             font-style: normal;
 }
-
+@media (max-width:600px){
 h2{
     font-family: "Silkscreen";
     color:rgb(188, 214, 235); 
-    text-align:center; 
+    text-align:center;
+    font-size: 60%; 
 }
+}
+
+@media (min-width:601px){
+    h2{
+        font-family: "Silkscreen";
+        color:rgb(188, 214, 235); 
+        text-align:center; 
+        font-size: 140%;
+    }
+    }
 
 @font-face{
     font-family: "Micro 5";
@@ -50,11 +79,10 @@ h3{
 }
 
 @font-face{
-    font-family: "Courier New";
+    font-family: 'Courier New';
     src:    url('/fonts/CourierNewPSMT.woff') format('woff'),
             url('/fonts/CourierNewPSMT.woff2') format('woff2');
             font-style: normal;
-            
 }
 
 p{
@@ -119,7 +147,6 @@ img{
 }
 
 .gifs {
-    width: 100%;
     height: auto;
     max-width: 20px;
 }
