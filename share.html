@@ -1,0 +1,139 @@
+<!--html is the bread-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--head is the sauce-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--title in url-->
+        <title>disPLAY homepage</title>
+    <!--link to style sheet-->
+        <link rel="stylesheet" href="css/style.css">
+        
+   
+<!--internal css. the style sheet in inside the head. good for one page-->
+    <style>
+
+    *{
+        scroll-behavior: smooth;
+    }
+
+/*use as a super basic umbrella term to place absolute elements into. doesn't even need to have colours. can just be defined as relative. be relatives. be waves*/
+    .relative {
+        position: relative;
+    } 
+/*defines relative position class*/
+
+    .absolute {
+        position: absolute;
+        margin: 20%;
+        bottom: 1rem;
+        right: 1rem;
+    }
+/*defines absolute position class (to be used within relative position)*/
+
+    button {
+        font-family: "Silkscreen", sans-serif;
+        font-size: 100%;
+        color: #B39772;
+        border-radius: 1rem;
+        padding: 5px;
+        background-color: #EBD1AE;
+        border: 4px solid #B39772;
+    }
+
+    button:hover {
+        transition: 0.5s;
+        background-color: #B39772;
+        border: 4px solid #EBD1AE;
+        color: #EBD1AE;
+        border-radius: 1rem;
+        font-weight: 800;
+    }
+
+    a:link {
+        text-decoration: none;
+        text-decoration-color: none;
+    }
+
+/*grid*/
+    .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+    .container > div {
+  padding: 10px;
+  text-align: center;
+}
+
+        /*close internal css.*/
+        </style>
+        
+    <!--close head-->
+    </head>
+
+    <body>
+<p id="top">
+        <h1>
+            <div><a href="index.html" style="color:rgb(250, 225, 250); font-size: 50pt;">disPLAY
+            </a></div>
+        </h1>
+        <h2>
+            <div class="container">
+                <div>
+                    <a href="create.html" style="color:rgb(188, 214, 235);">☆ create ☆
+                    </a>
+                </div>
+                <div>
+                    <a href="share.html" style="color:#EBD1AE;">☆ share ☆
+                    </a>
+                </div>
+                <div>
+                    <a href="explore.html" style="color:rgb(188, 214, 235);">☆ explore ☆
+                    </a>
+                </div>
+            </h2>
+
+<h2 style="color:#EBD1AE;">
+    ready to share?
+</h2>
+<img src="images/dithered-image (2).png" class="responsive">
+<p>heres how to share</p>
+
+
+<div>
+    <p class="figcaption"><br>
+        <a href="#top" style="color:rgb(188, 214, 235);" >↑ top ↑</a>
+</div>
+
+<!-- footer is used as semantics to organize code -->
+ <footer>
+    <div class="relative">
+        <button class="absolute" ><a href="mailto:display@gmail.com">email</a></button>
+    </div>
+    
+    <div class="backtotop">
+        <a href="#" style="color:#2B2B2B;">↑</a>
+    </div>
+
+    <div class="container">
+        <div><footer>logo</footer></div>
+        <div><footer>pages<br><br>home<br>create<br>share<br>explore<br></footer></div>
+        <div><footer>designed & developed by:<br><br>
+                madison brook schneider<br>
+                © madison brook schneider 2025<br><br>
+                
+                display@gmail.com<br>
+                100 McCaul St, Toronto, ON M5T 1G1</footer></div>
+    </div>
+ </footer>
+    
+    </body>
+
+    
+</html>
+<!--html is the bread-->

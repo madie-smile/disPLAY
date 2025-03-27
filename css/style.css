@@ -1,34 +1,91 @@
-h1{
-    color:rgb(250, 225, 250); 
-    text-align:center; 
-    font-family: "Jacquard 24", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50pt;
-}
-
-
-#container{
+/*#container{
     width: 75%;
     margin: auto;
     text-align: center;
+}*/
+
+/* MADIE: check container multiple places*/
+
+@font-face{
+    font-family: "Jacquard 24";
+    src:    url('/fonts/Jacquard24-Regular.woff') format('woff'),
+            url('/fonts/Jacquard24-Regular.woff2') format('woff2');
+            font-style: normal;
+            
+}
+
+h1{
+    font-family: "Jacquard 24";
+    color:rgb(250, 225, 250); 
+    text-align:center; 
+    font-size: 400%;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Silkscreen";
+    src:    url('/fonts/Silkscreen-Regular.woff') format('woff'),
+            url('/fonts/Silkscreen-Regular.woff2') format('woff2');
+            font-style: normal;
+}
+
+h2{
+    font-family: "Silkscreen";
+    color:rgb(188, 214, 235); 
+    text-align:center; 
+}
+
+@font-face{
+    font-family: "Micro 5";
+    src:    url('/fonts/Micro5-Regular.woff') format('woff'),
+            url('/fonts/Micro5-Regular.woff2') format('woff2');
+            font-style: normal;
+}
+
+h3{
+    font-family: "Micro 5";
+    color:rgb(188, 214, 235); 
+    text-align:center; 
+    font-size: 200%;
+}
+
+@font-face{
+    font-family: "Courier New";
+    src:    url('/fonts/CourierNewPSMT.woff') format('woff'),
+            url('/fonts/CourierNewPSMT.woff2') format('woff2');
+            font-style: normal;
+            
 }
 
 p{
+    font-family:'Courier New'; 
     color:rgb(188, 214, 235); 
     text-align:center; 
-    font-family:'Courier New', Courier, monospace, sans-serif; 
     font-size: 10pt;
+    line-height: 1.25;
+    line-height: 1.25;
+    word-spacing: -50%;
 }
 
-a{
+li{
+    font-family:'Courier New'; 
     color:rgb(188, 214, 235); 
-    text-align:center; 
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
-   font-style: normal;
+    text-align:left; 
+    font-size: 10pt;
+    line-height: 1;
+    word-spacing: -50%;
+    margin: 2rem;
 }
 
+footer{
+    font-family:'Courier New'; 
+    color:rgb(188, 214, 235); 
+    text-align:left; 
+    font-size: 10pt;
+    line-height: 1.25;
+    line-height: 1.25;
+    word-spacing: -50%;
+}
 
 input{
     width: 25%;
@@ -38,4 +95,31 @@ input{
 
 body{
     background-color: #2B2B2B;
+}
+
+.backtotop{
+position: fixed;
+right: 3%;
+bottom: 3%;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+/*pixels are great for little specific components*/
+background-color: rgb(188, 214, 235);
+filter: drop-shadow(1px 1px 10px rgb(188, 214, 235));
+font-family:'Courier New'; 
+font-size: 2rem;
+text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-width: 1600px;
+}
+
+.gifs {
+    width: 100%;
+    height: auto;
+    max-width: 20px;
 }
