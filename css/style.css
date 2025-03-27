@@ -13,10 +13,10 @@ a:hover{
     transition: 2s;
 }
 
-@font-face{
+@font-face {
     font-family: 'Jacquard24';
-    src:    url('/fonts/Jacquard24-Regular.woff') format('woff'),
-            url('/fonts/Jacquard24-Regular.woff2') format('woff2');
+    src: url('fonts/Jacquard24-Regular.woff') format('woff'),
+         url('fonts/Jacquard24-Regular.woff2') format('woff2');
             
 }
 
